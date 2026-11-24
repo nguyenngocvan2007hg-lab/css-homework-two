@@ -1,0 +1,142 @@
+/* One shared stylesheet for all three HTML pages. */
+/* Body: font family and font size. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #202b25;
+  background-color: #f5f7f3;
+  margin: 0;
+}
+
+/* Header: background color. */
+header {
+  background-color: #e2eddf;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Navigation: background color. */
+nav {
+  background-color: #234b36;
+  display: inline-block;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Homework Two: original li styling is commented out.
+li {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+*/
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 4px;
+}
+
+nav a:hover {
+  background-color: #163323;
+}
+
+a:focus-visible {
+  outline: 3px solid #a85b00;
+  outline-offset: 3px;
+}
+
+nav a:focus-visible {
+  outline-color: #ffe08a;
+}
+
+nav img {
+  width: 10%;
+  margin-top: 12px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Main: background color and font size. */
+main {
+  background-color: #ffffff;
+  font-size: 20px;
+  max-width: 1080px;
+  margin: 24px auto;
+  padding: 24px;
+}
+
+/* Footer: background color. */
+footer {
+  background-color: #e2eddf;
+  padding: 16px 24px;
+}
+
+/* Main heading: alignment, font family, and color. */
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #234b36;
+  margin: 20px 16px 0;
+}
+
+/* Paragraphs: line height. */
+p {
+  line-height: 1.7;
+}
+
+main a,
+footer a {
+  color: #124a70;
+}
+
+/* Visible skip link: the first keyboard link on every page. */
+.skip-link {
+  display: inline-block;
+  padding: 12px 16px;
+  color: #124a70;
+  background-color: #ffffff;
+}
+
+/* Two columns, each taking 40% of the gallery width. */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* The park gallery wraps onto additional rows as needed. */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.flex img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
